@@ -1,9 +1,8 @@
 [build]
   base = "frontend"
   command = "yarn build"
-  publish = "dist"
+  publish = "build"
 
-# SPA routing fix
 [[redirects]]
   from = "/*"
   to = "/index.html"
