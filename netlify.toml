@@ -1,0 +1,10 @@
+[build]
+  base = "frontend"
+  command = "yarn build"
+  publish = "dist"
+
+# SPA routing fix
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
